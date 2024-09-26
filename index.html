@@ -107,7 +107,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Anonymous authors
+              Anonymous authors,
             </span>
             
           </div>
@@ -206,11 +206,54 @@ In addition, we benchmark existing standard and robust RL algorithms in Robust-G
 <section class="section has-text-justified">
   <div class="container is-max-desktop">
     <!--/ Method. -->
+
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Benchmark Features</h2>
+      </div>
+    </div>
+
+    <p>This benchmark aims to advance robust reinforcement learning (RL) for real-world applications and domain adaptation. The benchmark provides a comprehensive set of tasks that cover various robustness requirements in the face of uncertainty on state, action, reward, and environmental dynamics, and spans diverse applications including control, robot manipulations, dexterous hand, and more. (This repository is under active development. We appreciate any constructive comments and suggestions).</p>
+
+<h3>🔥 <strong>Benchmark Features:</strong></h3>
+<ul>
+  <li><strong>High Modularity:</strong> It is designed for flexible adaptation to a variety of research needs, featuring high modularity to support a wide range of experiments.</li>
+  <li><strong>Task Coverage:</strong> It provides a comprehensive set of tasks to evaluate robustness across different RL scenarios.</li>
+  <li><strong>High Compatibility:</strong> It can be seamless and compatible with a wide range of existing environments.</li>
+  <li><strong>Support Vectorized Environments:</strong> It can enable parallel processing of multiple environments for efficient experimentation.</li>
+  <li><strong>Support for New Gym API:</strong> It fully supports the latest standards in Gym API, facilitating easy integration and expansion.</li>
+  <li><strong>LLMs Guide Robust Learning:</strong> Leverage LLMs to set robust parameters (LLMs as adversary policies).</li>
+</ul>
+
+<h3>🔥 <strong>Benchmark Tasks:</strong></h3>
+<ul>
+  <li><strong>Robust MuJoCo Tasks:</strong> Tackle complex simulations with enhanced robustness.</li>
+  <li><strong>Robust Box2D Tasks:</strong> Engage with 2D physics environments designed for robustness evaluation.</li>
+  <li><strong>Robust Robot Manipulation Tasks:</strong> Robust robotic manipulation with Kuka and Franka robots.</li>
+  <li><strong>Robust Safety Tasks:</strong> Prioritize safety in robustness evaluation.</li>
+  <li><strong>Robust Android Hand Tasks:</strong> Explore sophisticated hand manipulation challenges in robust settings.</li>
+  <li><strong>Robust Dexterous Tasks:</strong> Advance the robust capabilities in dexterous robotics.</li>
+  <li><strong>Robust Fetch Manipulation Tasks:</strong> Robust object manipulation with Fetch robots.</li>
+  <li><strong>Robust Robot Kitchen Tasks:</strong> Robust manipulation in Kitchen environments with robots.</li>
+  <li><strong>Robust Maze Tasks:</strong> Robust navigation robots.</li>
+  <li><strong>Robust Multi-Agent Tasks:</strong> Facilitate robust coordination among multiple agents.</li>
+</ul>
+
+<p>Each of these robust tasks incorporates elements such as robust observations, actions, reward signals, and dynamics to evaluate the robustness of RL algorithms.</p>
+
+<h3>🔥 <strong>Our Vision:</strong></h3>
+<p>We hope this benchmark serves as a useful platform for pushing the boundaries of RL in real-world problems --- promoting robustness and domain adaptation ability!</p>
+
+    <br> 
+    <br> 
+
+
     <div class="columns is-centered">
       <div class="column">
         <h2 class="title is-3">Robust RL Framework</h2>
       </div>
     </div>
+
      <p>Robust RL problems typically consists of three modules:</p>
 <ul>
   <li><strong>An agent (a policy):</strong> tries to learn a strategy &pi; (a policy) based on the observation from the environment to achieve optimal long-term return</li>

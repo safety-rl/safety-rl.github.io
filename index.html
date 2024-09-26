@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D3BBNGXC9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8D3BBNGXC9');
+  </script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .video-carousel {
+      width: 90%; /* Adjust as needed */
+      height: 200px; /* Adjust as needed */
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      margin-left: 5%; /* Add space on the left side */
+      font-size: 0;
+  }
+
+  .video-carousel-end {
+      width: 90%; /* Adjust as needed */
+      height: 200px; /* Adjust as needed */
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      margin-left: 5%; /* Add space on the left side */
+      font-size: 0;
+  }
+  
+    .video-slide {
+      width: 210px; /* 1/5 of the container */
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  
+  }
+
+  .video-slide-end {
+      width: 210px; /* 1/5 of the container */
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  
+  }
+
+    .teaser-image {
+      /* up space */
+      display: block; /* Ensures image takes up full width of its container */
+      max-width: 100%; /* Ensures image doesn't exceed its container width */
+      height: auto; /* Preserves aspect ratio of the image */
+  }
+
+
+  
+  @keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+  
+
+
+  </style>
+
+  <title>HumanoidBench</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Robust Gymnasium: A Unified Modular Benchmark for Robust Reinforcement Learning</h1>        
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Anonymous authors,
+            </span>
+            
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">              
+              <span class="link-block">
+                <a class="button is-normal is-rounded is-dark" href="https://anonymous.4open.science/r/Robust-Gymnasium-E532">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- <div class="video-carousel">
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/robust/mujoco-dynamics/Ant_variant_2 00_00_00-00_00_30.gif" type="video/gif">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/robust/mujoco-dynamics/Ant_variant_3 00_00_00-00_00_30.gif" type="video/gif">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/robust/mujoco-dynamics/Ant_variant_4 00_00_00-00_00_30.gif" type="video/gif">
+    </video>
+   <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Dbookshelf.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Tsit.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Dhighbarsimple.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Dstair.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Tbalance.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Tcubes.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Tbasketball.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Tpole.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Tstand.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Twindow.mp4" type="video/mp4">
+    </video>
+  </div> -->
+
+
+<!-- </div> -->
+<script src="./static/js/rolling-video.js"></script>
+<script src="./static/js/rolling-video-end.js"></script>
+<section class="hero is-light">
+  <br>
+  <div class="container is-max-desktop">
+    <div class="column is-centered">
+      <img src="./static/videos/robust/gif-edit-overview.gif" alt="teaser" class="teaser-image">
+    </div>
+    <br> 
+    <br> 
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+
+      <div class="column" style="padding: 0 40px;">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Driven by inherent uncertainty and the sim-to-real gap, robust reinforcement learning (RL) seeks to improve resilience against the complexity and variability in agent-environment sequential interactions. Despite the existence of a large number of RL benchmarks, there is a lack of standardized benchmarks for robust RL. Current robust RL policies often focus on a specific type of uncertainty and are evaluated in distinct, one-off environments. In this work, we introduce Robust-Gymnasium, a unified modular benchmark designed for robust RL that supports a wide variety of disruptions across all key RL components—agents' observed state and reward, agents' actions, and the environment. It offers over sixty diverse task environments spanning control and robotics, safe RL, and multi-agent RL. Robust-Gymnasium provides an open-source and user-friendly tool for the community to assess current methods and foster the development of robust RL algorithms. 
+In addition, we benchmark existing standard and robust RL algorithms in Robust-Gymnasium, uncovering significant deficiencies in each and offering new insights.
+          </p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section has-text-justified">
+  <div class="container is-max-desktop">
+    <!--/ Method. -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Robust RL Framework</h2>
+      </div>
+    </div>
+     <p>Robust RL problems typically consists of three modules:</p>
+<ul>
+  <li><strong>An agent (a policy):</strong> tries to learn a strategy &pi; (a policy) based on the observation from the environment to achieve optimal long-term return</li>
+  <li><strong>An environment/task:</strong> a task that determines the agents' immediate reward r(&middot;| s,a) and the physical or logical dynamics (transition function P(&middot;| s,a))</li>
+  <li><strong>The disruptor module:</strong> represents the uncertainty/perturbation events that happen during any part of the interaction process between the agent and environment, with different modes, sources, and frequencies.</li>
+</ul>
+
+    <br> <br> <br>
+    <!-- <h2 class="subtitle is-4" style="text-align: center;">Locomotion</h2>  -->
+    <div class="column is-centered">
+      <img src="./static/images/robust/world-model3.png" alt="teaser" class="teaser-image">
+    </div>
+    <br>
+    <br>
+    
+
+  </div>
+</section>
+
+
+
+
+<footer class="custom_footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, <a href="https://xingyu-lin.github.io/spawnnet/">SpawnNet</a>, and <a href="https://wuphilipp.github.io/gello_site/">Gello</a>.
+          </p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
